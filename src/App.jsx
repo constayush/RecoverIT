@@ -3,6 +3,7 @@ import AuthPage from '../src/components/AuthPage'
 import { BrowserRouter , Route ,Routes } from 'react-router-dom';
 import LoginPage from './components/LoginPage';
 import SignPage from './components/SignPage';
+import Home from './components/Home';
 function App() {
   return (
     <BrowserRouter>
@@ -11,6 +12,7 @@ function App() {
     <Route path="/" element={<AuthPage/>} />
     <Route path="/login" element={<LoginPage />} />
     <Route path="/signup" element={<SignPage />} />
+    <Route path="/home" element={<Home />} />
   </Routes>
   </BrowserRouter>
   )
