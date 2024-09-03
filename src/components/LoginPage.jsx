@@ -4,7 +4,7 @@ import Home from './Home';
 import AuthPage from './AuthPage';
 
 function LoginPage() {
-  let [isLoginValid, setIsLoginValid] = useState(true);
+  let [isLoginValid, setIsLoginValid] = useState(false);
   const navigate = useNavigate(); // Initialize the useNavigate hook
 
   const handleLogin = () => {

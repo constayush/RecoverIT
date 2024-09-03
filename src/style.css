@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html,body {
 
-    height: 100dvh;
+    height: 100vh;
     width: 100vw;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -15,86 +16,79 @@ body {
     font-family: "Lexend Peta", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-style: normal;
+
   }
-
-
-.button-86 {
-  
-  all: unset;
-
-  font-size: 16px;
-  background: transparent;
-  border: none;
-  position: relative;
-  color: #f0f0f0;
-  cursor: pointer;
-  z-index: 1;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-86::after,
-.button-86::before {
-    transition: ease .3s all ;
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -99999;
-  transition: all .4s ease;
-}
-
-.button-86::before {
-  transform: translate(0%, 0%);
-  width: 100%;
-  height: 100%;
-  
-  border-radius: 10px;
-}
-
-.button-86::after {
-
-  transform: translate(10px, 10px);
-  width: 35px;
-  height: 35px;
-  background: #ffffff15;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 50px;
-}
-
-.button-86:hover::before {
-  transform: translate(5%, 20%);
-  width: 110%;
-  height: 110%;
-}
-
-.button-86:hover::after {
-  border-radius: 10px;
-  transform: translate(0, 0);
-  width: 100%;
-  height: 100%;
-}
-
-.button-86:active::after {
-  transition: 0s;
-  transform: translate(0, 5%);
-}
-  .loginBtn::before{
+.loginBtn{
     background:#1E212D ;
   }
-  .signBtn::before{
+.signBtn{
     background: #616163;
   }
 
-  .button-86:hover{
 
-    font-size: large;
-  }
+
+  .button-gen {
+    font-family: "Lexend Peta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+   }
+   
+   .button-gen span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+   }
+   
+   .button-gen span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+   }
+   
+   .button-gen:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+   }
+   
+   .button-gen:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+   }
+   
+   .button-gen:hover span:last-child {
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+   }
