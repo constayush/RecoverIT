@@ -2,7 +2,6 @@
   "name": "recoverit",
   "version": "1.0.0",
   "description": "a lost and found application for an university campus",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
