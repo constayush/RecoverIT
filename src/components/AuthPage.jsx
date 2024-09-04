@@ -49,15 +49,15 @@ function AuthPage() {
   return (
 
 
-    <div className='h-[100vh] w-full bg-neutral-100 dark:bg-black dark:bg-grid-white/[0.01] bg-grid-black/[0.1] p-14 flex '>
+    <div className='h-[100vh] w-full bg-neutral-100 dark:bg-black dark:bg-grid-white/[0.01] bg-grid-black/[0.1] p-8 lg:p-14 flex lg:flex-row flex-col justify-center items-center'>
 
 
-      <div className='info-section  w-[50%] h-full'>
+      <div className='info-section w-full h-[50%]  lg:w-[50%] lg:h-full'>
 
-        <h1 className='text-[6rem] logoFont'><Cover >Recover'IT</Cover></h1>
-        <p className='text-[2.1rem] logoFont italic text-[#444444] mb-4'> Bringing lost items back to you</p>
+        <h1 className='text-[3rem] lg:text-[6rem] logoFont'><Cover >Recover'IT</Cover></h1>
+        <p className='text-[1.5rem] lg:text-[2.1rem] logoFont italic text-[#444444] mb-4'> Bringing lost items back to you</p>
        
-        <p className='text-[1.5rem] logoFont  text-[#5e5e5e] mb-16'>Lose something on campus? Our Lost and Found app makes it easy to <span className='text-blue-500'>get your stuff back.</span> Just report <span className='text-blue-500'>what you’ve lost</span>, or if you find something, list it here. We’re all about helping you reconnect with your belongings quickly and hassle-free, so nothing important stays lost for long.</p>
+        <p className='text-[.8rem] lg:text-[1.5rem] logoFont  text-[#5e5e5e] mb-8 lg:mb-16'>Lose something on campus? Our Lost and Found app makes it easy to <span className='text-blue-500'>get your stuff back.</span> Just report <span className='text-blue-500'>what you’ve lost</span>, or if you find something, list it here. We’re all about helping you reconnect with your belongings quickly and hassle-free, so nothing important stays lost for long.</p>
 
 
         <div className='button-wrapper flex gap-8'>
@@ -71,7 +71,7 @@ function AuthPage() {
 
 
 
-      <div className='img-section w-[50%] h-full'><img className='w-full h-full' src={logo} /></div>
+      <div className='img-section w-full h-[50%]  lg:w-[50%] lg:h-full'><img className='w-full h-full' src={logo} /></div>
 
 
     </div>
