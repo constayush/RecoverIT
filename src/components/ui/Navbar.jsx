@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
     return (
-        <nav class="sticky top-0 bg-gray-800 text-white shadow-md h-16 ">
+        <nav class="sticky top-0 bg-gray-800 text-white shadow-md h-16 mb-16 z-[99] ">
             
 
                 <div class="flex  justify-between items-center w-full h-full px-32">
