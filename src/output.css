@@ -1899,6 +1899,10 @@ html,body {
 }
 
 @media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:w-\[30rem\] {
     width: 30rem;
   }
