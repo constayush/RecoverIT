@@ -9,7 +9,7 @@ function Navbar() {
 
                     <a href="#" class="text-xl font-semibold">RecoverIT</a>
 
-                    <div class="ml-10 space-x-4 hidden md:flex">
+                    <div class="ml-10 space-x-4 sm:hidden flex">
 
                         <a href="#" class="text-gray-300 hover:text-white">Home</a>
                         <a href="#" class="text-gray-300 hover:text-white">Report</a>
