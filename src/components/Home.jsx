@@ -4,7 +4,12 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Navbar from './ui/Navbar'
+
 export function Home() {
+
+
+
+
   return (<div className="overflow-x-hidden">
 
 

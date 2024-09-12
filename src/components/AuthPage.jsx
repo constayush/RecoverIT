@@ -3,10 +3,16 @@ import logo from '../../public/logo.svg';
 import { Link } from 'react-router-dom';
 import { Cover } from './ui/cover';
 import { AuroraBackground,  } from "./ui/aurora-background";
- 
+import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { motion } from "framer-motion";
 import { ZIndex } from '@tsparticles/engine';
 function AuthPage() {
+
+
+  const words = `Lose something on campus? Our Lost and Found app makes it easy to get your stuff back. Just report what you’ve lost, or if you find something, list it here. We’re all about helping you reconnect with your belongings quickly and hassle-free, so nothing important stays lost for long.`;
+ 
+
+
   return (
     <AuroraBackground className={'z-50'}>
       <motion.div
@@ -29,9 +35,9 @@ function AuthPage() {
         <p className='text-xl lg:text-2xl logoFont italic text-[#444444] mb-4'>
           Bringing lost items back to you
         </p>
-        <p className='text-base lg:text-lg logoFont text-[#5e5e5e] mb-8 lg:mb-16'>
-          Lose something on campus? Our Lost and Found app makes it easy to <span className='text-blue-500'>get your stuff back.</span> Just report <span className='text-blue-500'>what you’ve lost</span>, or if you find something, list it here. We’re all about helping you reconnect with your belongings quickly and hassle-free, so nothing important stays lost for long.
-        </p>
+      
+        <TextGenerateEffect className="" words={words} />
+        
         <div className='button-wrapper flex flex-row lg:flex-row gap-4 lg:gap-8'>
           <Link to='/login'>
             <button className='button-gen loginBtn w-full lg:w-[150px]'>
