@@ -5,7 +5,8 @@ import { Cover } from './ui/cover';
 import { AuroraBackground,  } from "./ui/aurora-background";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { motion } from "framer-motion";
-import { ZIndex } from '@tsparticles/engine';
+import { SparklesCore } from "./ui/sparkles";
+import { Boxes } from "./ui/background-boxes";
 function AuthPage() {
 
 
@@ -13,7 +14,8 @@ function AuthPage() {
  
 
 
-  return (
+  return (<>
+    
     <AuroraBackground className={'z-50'}>
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
@@ -25,12 +27,13 @@ function AuthPage() {
         }}
         className="relative flex flex-col gap-4 items-center justify-center  z-99"
       >
+      
     <div className='h-screen w-full bg-neutral-100 dark:bg-black dark:bg-grid-white/[0.01] bg-grid-black/[0.1] p-4 lg:p-14 flex flex-col lg:flex-row justify-center items-center gap-4'>
       
-      
+   
       <div className='info-section w-full lg:w-1/2 flex flex-col justify-center items-start p-4'>
         <h1 className='text-5xl md:text-6xl lg:text-8xl logoFont'>
-          <Cover>Recover'IT</Cover>
+          <Cover >Recover'IT</Cover>
         </h1>
         <p className='text-xl lg:text-2xl logoFont italic text-[#444444] mb-4'>
           Bringing lost items back to you
@@ -64,7 +67,8 @@ function AuthPage() {
   
     </motion.div>
     </AuroraBackground>
-  );
+  
+  </>);
 }
 
 export default AuthPage;
